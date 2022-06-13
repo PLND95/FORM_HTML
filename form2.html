@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký học viên</title>
+</head>
+<body>
+    <div style="color:blue;background-color:aqua;"><h1>ĐĂNG KÝ HỌC VIÊN</h1></div>
+    <form action="">
+        <table>
+            <tr>
+                <td style="color:blue ;">Họ và tên</td>
+                <td><input type="text" name="fullname"></td>
+            </tr> 
+            <tr>
+                <td style="color:blue;">Ngày sinh</td>
+                <td><input type="date" name="Date of Birth"></td>
+            </tr>
+            <tr>
+                <td><label style="color:blue">Giới tính</label></td>
+                <td><input type="radio" name="gender" id="gender" value="nam">
+                <label for="gender" style="color: black;">Nam</label>
+                <input type="radio" name="gender" id="gender" value="nu">
+                <label for="gender" style="color: black;">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue ;" id="address">Địa chỉ</td>
+                <td style="color:black ;"><textarea name="address" cols="20" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td style="color:blue ;">Lớp</td>
+                <td>
+                    <select name="class">
+                      <option value=" ">--Chọn lớp--</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue ;">Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td style="color:blue;">Điện thoại</td>
+                <td><input type="tel" name="tel number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" name="submit" value="Đăng ký" id="2">Đăng ký</button>
+                    <button type="reset" name="reset" value="Nhập lại" id="3">Nhập lại</button> 
+                </td>
+            </tr>
+        </table>
+    </form>
+    <style>
+        body {
+            background-color:rgb(255, 236, 212);
+        }
+        #address {
+            vertical-align: top;
+        }
+        form {
+            width: 30%;
+            padding: 3px;
+        }
+        h1 {
+            vertical-align: 3px;
+            margin: 3px;
+        }
+    </style>
+</body>
+</html>
